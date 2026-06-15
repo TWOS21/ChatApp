@@ -1,0 +1,14 @@
+{
+  "permissions": {
+    "allow": [
+      "mcp__ide__getDiagnostics",
+      "Bash(start code *)",
+      "Bash(code -r .)",
+      "Bash(code *)",
+      "Bash(\"/c/Users/续雪/AppData/Local/Programs/Microsoft VS Code/Code.exe\" -r \"F:\\\\ChatApp\")",
+      "Bash(\"/c/Program Files/Microsoft VS Code/Code.exe\" -r \"F:\\\\ChatApp\")",
+      "Bash(cmd.exe /c \"code F:\\\\ChatApp\")",
+      "Bash(powershell.exe -Command \"Start-Process 'code' -ArgumentList '-r', 'F:\\\\ChatApp'\")"
+    ]
+  }
+}

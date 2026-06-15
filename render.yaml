@@ -1,0 +1,16 @@
+services:
+  - type: web
+    name: chatapp-api
+    runtime: python
+    plan: free
+    region: oregon
+    buildCommand: pip install -r requirements.txt
+    startCommand: python seed.py && uvicorn app.main:app --host 0.0.0.0 --port $PORT
+    rootDir: backend
+    envVars:
+      - key: PYTHON_VERSION
+        value: 3.12.0
+      - key: DATABASE_URL
+        value: sqlite:///./chatapp.db
+      - key: SECRET_KEY
+        generateValue: true

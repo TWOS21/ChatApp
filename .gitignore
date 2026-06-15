@@ -1,0 +1,39 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+venv/
+.env
+
+# Flutter/Dart
+client/.dart_tool/
+client/.packages
+client/.pub/
+client/build/
+client/.flutter-plugins
+client/.flutter-plugins-dependencies
+client/.metadata
+client/pubspec.lock
+
+# Android (Flutter host)
+client/android/.gradle/
+client/android/build/
+client/android/app/build/
+client/android/local.properties
+client/android/.idea/
+client/android/key.properties
+
+# iOS
+client/ios/Pods/
+client/ios/.symlinks/
+
+# IDE
+.vscode/
+.idea/
+
+# Storage
+storage/*
+
+# OS
+.DS_Store
+Thumbs.db
