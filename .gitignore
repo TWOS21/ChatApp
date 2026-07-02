@@ -31,6 +31,9 @@ client/ios/.symlinks/
 .vscode/
 .idea/
 
+# Database
+chatapp.db
+
 # Storage
 storage/*
 

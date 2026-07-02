@@ -3,9 +3,9 @@ from sqlalchemy.orm import DeclarativeBase, sessionmaker
 
 from app.config import settings
 
-# SQLite 需要 check_same_thread=False，其他数据库不需要
+# SQLite 需要 check_same_thread=False，PostgreSQL 不需要
 connect_args = {}
-if settings.DATABASE_URL.startswith("sqlite"):
+if not settings.IS_POSTGRES:
     connect_args["check_same_thread"] = False
 
 engine = create_engine(settings.DATABASE_URL, connect_args=connect_args)
